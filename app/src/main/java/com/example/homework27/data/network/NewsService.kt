@@ -10,5 +10,5 @@ interface NewsService {
 
     @Headers("x-api-key: 0718d6f5fbe545cc9ac7f9c55e9a1522")
     @GET("everything")
-    fun getNews (@Query("q") q: String): Call<NewsListArticleResponse>
+    fun getNews(@Query("domains") domains: String): Call<NewsListArticleResponse>
 }

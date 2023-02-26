@@ -21,7 +21,6 @@ class NewsViewModel @Inject constructor(
     private val _loadingLiveData = MutableLiveData<Boolean>()
     val loadingLiveData: LiveData<Boolean> get() = _loadingLiveData
 
-
     fun getNews() {
         _loadingLiveData.value = true
         viewModelScope.launch() {

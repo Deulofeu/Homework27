@@ -1,4 +1,4 @@
-package com.example.homework27
+package com.example.homework27.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,8 +7,7 @@ import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.homework27.ui.NewsAdapter
-import com.example.homework27.ui.NewsViewModel
+import com.example.homework27.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
-        val recycler = findViewById<RecyclerView>(R.id.rv_news)
+        val recycler = findViewById<RecyclerView>(R.id.rvNews)
 
         viewModel.getNews()
 
